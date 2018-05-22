@@ -1,0 +1,141 @@
+.page{
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+}
+.bg01 {
+    max-width: 1000px;
+    height: 600px;
+    margin: 0 auto;
+    flex: 1;
+}
+
+/*.page p{*/
+    /*position: fixed;*/
+    /*top: 100px;*/
+    /*left: 850px;*/
+    /*font-size: 40px;*/
+    /*color: white;*/
+/*}*/
+.page .text{
+    position: absolute;
+    /*margin: 0 auto;*/
+    width: 600px;
+    top: 100px;
+    margin-left: 18%;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}
+.page .border{
+    border-style: solid;
+    padding: 50px 150px 50px 150px;
+    position: absolute;
+    margin-left: 40px;
+
+    top: 300px;
+    border-color: aliceblue;
+    border-width: 1px;
+    /*opacity: 0.1;*/
+}
+form input{
+    padding: 8px 20px 8px 20px;
+    background: none;
+    color: aliceblue;
+}
+form{
+    position: relative;
+    top: 40px;
+}
+.border .text{
+    position: relative;
+    top: 10px;
+    margin: 0 auto;
+}
+.bb02{
+    height: 500px;
+    text-align: center;
+    width: 1000px;
+    margin: 0 auto;
+}
+.bb02 .text1{
+    color: black;
+}
+.col1,.col2{
+    display: flex;
+}
+
+.col1 .box1{
+    flex: 1;
+    padding: 50px 100px 100px 50px;
+
+}
+.box1 img{
+    float: left;
+}
+.box1 .text2{
+    margin-left: 60px;
+    text-align: left;
+}
+.col2 .box2{
+    flex: 1;
+    padding: 50px 100px 100px 50px;
+}
+.box2 img{
+    float: left;
+}
+.col2 .box2 .text2{
+    margin-left: 60px;
+    text-align: left;
+}
+.bb03{
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+.bb03 img {
+    max-width: 1000px;
+    height: 600px;
+    margin-top: 100px;
+}
+.box3{
+    position: absolute;
+    height: 300px;
+    width: 400px;
+    border-style: solid;
+    border-width: 1px;
+    top: 200px;
+    right: 30px;
+    border-color: white;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.box3 .box3_b{
+    margin: 20px 0px 20px 40px;
+    height: 260px;
+    width: 360px;
+    background: white;
+}
+.box3 .box3_0{
+    top: 150px;
+    left: 20px;
+    position: absolute;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+}
+.box4{
+    position: absolute;
+    height: 400px;
+    width: 350px;
+    border-style: solid;
+    border-width: 1px;
+    top: 200px;
+    left: 100px;
+    border-color: white;
+}
+
