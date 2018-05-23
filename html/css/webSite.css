@@ -1,14 +1,28 @@
+body{
+    background-color: #F2F2F2;
+}
+
+/*第一栏*/
 .page{
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
     position: relative;
     display: flex;
+    text-align: center;
+    font-family: Serif;
 }
 .bg01 {
-    max-width: 1000px;
+    max-width: 1100px;
     height: 600px;
     margin: 0 auto;
     flex: 1;
+}
+.page .text h1{
+    font-size: 40px;
+    margin: 0px 0 30px 0;
+}
+.page .text p{
+    color: #cccccc;
 }
 
 /*.page p{*/
@@ -23,17 +37,16 @@
     /*margin: 0 auto;*/
     width: 600px;
     top: 100px;
-    margin-left: 18%;
+    margin-left: 22%;
     text-align: center;
     color: white;
     font-size: 14px;
 }
 .page .border{
     border-style: solid;
-    padding: 50px 150px 50px 150px;
+    padding: 50px 150px 70px 150px;
     position: absolute;
-    margin-left: 40px;
-
+    margin-left: 90px;
     top: 300px;
     border-color: aliceblue;
     border-width: 1px;
@@ -44,6 +57,13 @@ form input{
     background: none;
     color: aliceblue;
 }
+.border form input:nth-of-type(3){
+    background: white;
+    color: black;
+}
+.border form input:nth-of-type(2){
+    color: #ccc8c8;
+}
 form{
     position: relative;
     top: 40px;
@@ -53,15 +73,23 @@ form{
     top: 10px;
     margin: 0 auto;
 }
+.border .text h1{
+    font-size: 24px;
+}
+/*第二栏*/
 .bb02{
     height: 500px;
     text-align: center;
-    width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
+    background: white;
+    padding-bottom: 150px;
+    padding-top: 10px;
 }
 .bb02 .text1{
     color: black;
 }
+
 .col1,.col2{
     display: flex;
 }
@@ -89,36 +117,112 @@ form{
     margin-left: 60px;
     text-align: left;
 }
+/*第三栏*/
 .bb03{
-    width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
     position: relative;
 }
 .bb03 img {
-    max-width: 1000px;
+    max-width: 1100px;
     height: 600px;
-    margin-top: 100px;
+    /*margin-top: 100px;*/
 }
 .box3{
     position: absolute;
-    height: 300px;
-    width: 400px;
+    height: 400px;
+    width: 500px;
     border-style: solid;
     border-width: 1px;
-    top: 200px;
-    right: 30px;
-    border-color: white;
+    top: 100px;
+    right: 0px;
+    border-color: #ccc8c8;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
 .box3 .box3_b{
     margin: 20px 0px 20px 40px;
-    height: 260px;
-    width: 360px;
+    height: 360px;
+    width: 460px;
     background: white;
 }
+.box3 .box3_b h1{
+    font-size: 20px;
+    padding: 40px 100px 20px 300px;
+}
+.box3 .box3_b p{
+    font-size: 16px;
+    position: absolute;
+    right: 0;
+    top: 80px;
+}
+.b3_row{
+    position: relative;
+    height: 200px;
+    top: 30px;
+    width: 455px;
+    /*border-style: solid;*/
+    /*border-width: 1px;*/
+    display: flex;
+    margin-left: 50px;
+
+}
+.b3_row .b3_col{
+    position: relative;
+    flex: 1;
+    height: 200px;
+    /*border-style: solid;*/
+    /*border-width: 1px;*/
+    margin: 0 8px 0 5px;
+
+}
+.b3_row .b3_col img{
+    height: 100px;
+    margin: 0 18px 0px 0;
+}
+/*.b3_row .b3_col .b3_text{*/
+    /*position: absolute;*/
+    /*height: 100px;*/
+    /*width: 140px;*/
+    /*border-style: solid;*/
+
+/*}*/
+.b3_row .b3_col .b3_text{
+    margin-left: 10px;
+
+}
+.b3_row .b3_col .b3_text h3{
+    margin-top: 0;
+}
+.b3_row .b3_col .b3_text p{
+    margin: 60px 0px 0 10px;
+    /*text-align: left;*/
+    font-size: 12px;
+}
+.b3_row .b3_col:nth-of-type(3) .b3_text p{
+   padding-right: 33px;
+
+}
+
+/*.b3_row .b3_col:nth-of-type(3) img{*/
+    /*height: 100px;*/
+    /*width: 100px;*/
+    /*position: absolute;*/
+    /*bottom: 101px;*/
+    /*right: 40px;*/
+/*}*/
+/*.b3_row .b3_col:nth-of-type(3) .b3_text{*/
+    /*position: absolute;*/
+    /*top: 90px;*/
+    /*height: 100px;*/
+    /*width: 100px;*/
+    /*border-style: solid;*/
+/*}*/
+/*.b3_row .b3_col:nth-of-type(3) .b3_text p{*/
+    /*font-size: 16px;*/
+/*}*/
 .box3 .box3_0{
-    top: 150px;
+    top: 200px;
     left: 20px;
     position: absolute;
     height: 6px;
@@ -126,16 +230,272 @@ form{
     border-radius: 50%;
     border-style: solid;
     border-width: 1px;
-    border-color: white;
+    border-color: #ccc8c8;
 }
+/*左边*/
 .box4{
     position: absolute;
     height: 400px;
-    width: 350px;
-    border-style: solid;
-    border-width: 1px;
-    top: 200px;
+    width: 450px;
+    /*border-style: solid;*/
+    /*border-width: 1px;*/
+    /*border-color: #ccc8c8;*/
+    top: 100px;
     left: 100px;
-    border-color: white;
+
+    text-align: left;
+}
+.box4 .box4_top{
+    position: absolute;
+    height: 400px;
+    width: 300px;
+    /*border-style: solid;*/
+    /*border-width: 1px;*/
+    /*border-color: #ccc8c8;*/
+    text-align: left;
+
+}
+.box4 h1{
+    color: white;
+    font-size: 30px;
+    font-family: Serif;
+}
+.box4 p{
+    color: #ccc8c8;
+    line-height: 28px;
+}
+.box4 form{
+    position: absolute;
+    top: 350px;
+}
+.box4 form input{
+    padding: 15px 20px 15px 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+
+}
+.box4 form input:nth-of-type(1){
+    background: white;
+    color: black;
+}
+/*第四栏*/
+.bb04{
+    padding-top: 10px;
+    max-width: 1100px;
+    height: 400px;
+    margin: 0 auto;
+    border-bottom-style: solid;
+    text-align: center;
+    border-bottom-width: 1px;
+    background: white;
+    border-color: #cccccc;
 }
 
+.bb04 .bb04_text{
+    display: flex;
+    margin: 50px 50px 0 50px;
+}
+.bb04_text .bbox1{
+    flex: 1;
+    width: 200px;
+
+}
+.bb04_text .bbox1 h1{
+    font-size: 26px;
+    font-family: serif;
+}
+.bb04_text .bbox1 p{
+    line-height: 5px;
+    color: #cccccc;
+    font-size: 14px;
+}
+/*第五栏*/
+.bb05{
+    max-width: 1100px;
+    height: 600px;
+    margin: 0 auto;
+    border-bottom-style: solid;
+    text-align: center;
+    border-bottom-width: 1px;
+    border-color: #cccccc;
+    font-family: Serif;
+    text-align: left;
+    background: white;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.bb05 .row5{
+    margin: 50px 100px 0 100px;
+    display: flex;
+}
+.row5 .col5{
+    flex: 1;
+    height: 250px;
+    /*border-style: solid;*/
+    margin: 0 30px 0 30px;
+}
+.row5 .col5 h1 , .row6 .col6 h1{
+    font-size: 24px;
+}
+.row5 .col5 p,.row6 .col6 p{
+    font-size: 16px;
+}
+.row5 .col5 img{
+    height: 250px;
+}
+.bb05 .row6{
+    margin: 50px 100px 0 100px;
+    display: flex;
+}
+.row6 .col6{
+    flex: 1;
+    height: 250px;
+    /*border-style: solid;*/
+    margin: 0 30px 0 30px;
+}
+.row6 .col6 img {
+    height: 250px;
+}
+/*第六栏*/
+.bb06{
+    max-width: 1100px;
+    height: 700px;
+    margin: 0 auto;
+    border-bottom-style: solid;
+    border-color: #cccccc;
+    text-align: center;
+    border-bottom-width: 1px;
+    background: white;
+    padding-top: 30px;
+}
+.bb06 .bb06_col1{
+    height: 150px;
+    /*border-style: solid;*/
+    margin: 0px 200px 0 200px;
+    font-family: Serif;
+    text-align: center;
+}
+.bb06 .b_row1{
+    display: flex;
+    margin: 10px 200px 0 200px;
+}
+.bb06 .b_row1 .b_col{
+    flex: 1;
+    height: 200px;
+    /*border-style: solid;*/
+    margin: 0 10px 20px 15px;
+
+}
+.bb06 .b_row2{
+    display: flex;
+    margin: 15px 200px 0 200px;
+}
+.bb06 .b_row2 .b_col{
+    flex: 1;
+    height: 200px;
+    /*border-style: solid;*/
+    margin: 20px 10px 0 10px;
+}
+.b_col img{
+    height: 220px;
+
+}
+/*第七栏*/
+.bb07{
+    max-width: 1100px;
+    height: 500px;
+    margin: 0 auto;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-color: #cccccc;
+    background: white;
+    padding-bottom: 30px;
+}
+
+.bb07 .b7_row{
+    display: flex;
+    margin: 0 50px 0 50px;
+}
+.b7_row .b7_col{
+    flex: 1;
+    height: 430px;
+    margin: 50px 50px 50px 50px;
+    border-style: solid;
+    border-color: #ccc8c8;
+    border-width: 1px;
+    text-align: center;
+
+}
+.b7_row .b7_col1{
+    flex: 1;
+    height: 400px;
+    margin: 50px 50px 50px 30px;
+    font-family: Serif;
+}
+.b7_row .b7_col1 h1{
+    margin-top: 40px;
+    font-size: 40px;
+}
+.b7_row .b7_col1 p{
+    text-align: left;
+}
+.b7_col form {
+    margin-left: 20px;
+}
+.b7_col form input,textarea{
+    margin: 10px 10px 10px 10px;
+    color: #ccc8c8;
+}
+.b7_col form input{
+    padding-right: 40px;
+
+}
+.b7_col form input:nth-of-type(3){
+    padding: 10px 97px 10px 97px;
+    background: black;
+}
+.b_contact{
+    margin-top: 50px;
+}
+.b7_col1 .contact{
+    height: 60px;
+    font-size: 16px;
+}
+.b7_col1 .contact img{
+    height: 30px;
+    float: left;
+    margin-right: 20px;
+}
+.b7_col1 .contact p{
+    margin: 0px 50px 0 0;
+}
+/*底栏*/
+.footer{
+    max-width: 1100px;
+    height: 300px;
+    background: black;
+    margin: 0 auto;
+    color: white;
+}
+.footer .f_row{
+    display: flex;
+    /*margin: 0 40px 0 20px;*/
+    margin-left: 100px;
+}
+.f_row .f_col1{
+    flex: 1;
+    height: 200px;
+    /*border-style: solid;*/
+    /*border-color: white;*/
+    margin: 50px 10px 20px 10px;
+}
+.f_row .f_col2{
+    flex: 2;
+    height: 200px;
+    /*border-style: solid;*/
+    /*border-color: white;*/
+    margin: 50px 10px 20px 10px;
+}
+.f_row p{
+    color: #cccccc;
+}
